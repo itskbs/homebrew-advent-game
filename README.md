@@ -1,4 +1,4 @@
-# homebrew-advent-game
+# Advent-Game
 
 Homebrew tap for [advent-game](https://github.com/itskbs/advent-game), a CLI
 advent calendar: one quiz per day, four choices, one correct answer, one
