@@ -5,21 +5,21 @@
 class AdventGame < Formula
   desc "A CLI advent calendar: one puzzle a day, one letter per solve."
   homepage "https://github.com/itskbs/advent-game"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/itskbs/advent-game/releases/download/v0.1.0/advent-game_darwin_amd64.tar.gz"
-      sha256 "1cd171ca66baca1d9cda2fdcff354a1c4436131536d4dd050ffcca62360b06a1"
+      url "https://github.com/itskbs/advent-game/releases/download/v0.1.1/advent-game_darwin_amd64.tar.gz"
+      sha256 "e2d979256bc83e25d5968d389669b1c53e10b67f9738c49a6e8875b066177d82"
 
       define_method(:install) do
         bin.install "advent-game"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/itskbs/advent-game/releases/download/v0.1.0/advent-game_darwin_arm64.tar.gz"
-      sha256 "86383c12b830217499063fb26c6f672b0ba88982a287a5d0ca04589f85045658"
+      url "https://github.com/itskbs/advent-game/releases/download/v0.1.1/advent-game_darwin_arm64.tar.gz"
+      sha256 "c43310f0a58c9ab0c2d3cb04b8f37751346628e79c87bdd15d7d10bd2af2fab9"
 
       define_method(:install) do
         bin.install "advent-game"
@@ -29,15 +29,15 @@ class AdventGame < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itskbs/advent-game/releases/download/v0.1.0/advent-game_linux_amd64.tar.gz"
-      sha256 "bfa3e256e6db53b7670561c21c84a5db2df98da14b438ccd9c15aeb33b676b9b"
+      url "https://github.com/itskbs/advent-game/releases/download/v0.1.1/advent-game_linux_amd64.tar.gz"
+      sha256 "891c4fa46105edf7b5c5aaee89301289c8a9a01e423ed4c69cfc18c1ab2e158b"
       define_method(:install) do
         bin.install "advent-game"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itskbs/advent-game/releases/download/v0.1.0/advent-game_linux_arm64.tar.gz"
-      sha256 "d6f03e1c2115a7b9b01814832e21b2dff05e10c7b8d8412a99c97bf4fa248878"
+      url "https://github.com/itskbs/advent-game/releases/download/v0.1.1/advent-game_linux_arm64.tar.gz"
+      sha256 "a92b5e8482e875fc2817d6fc5d43e6bc1abcc5e55eb740562b11b91962112d48"
       define_method(:install) do
         bin.install "advent-game"
       end
