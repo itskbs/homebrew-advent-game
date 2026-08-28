@@ -7,8 +7,8 @@ letter earned. Collect all 24 and reveal the solution word on Dec 24.
 ## Install
 
 ```sh
-brew tap itskbs/advent-game
-brew install advent-game
+brew tap itskbs/advent-game    # point homebrew to different repo
+brew install advent-game       # install cli game via homebrew
 ```
 
 If formular loading is refused:
@@ -25,6 +25,13 @@ advent-game day1        # play today's (or an earlier) puzzle
 advent-game status      # see which days you've solved
 advent-game solution    # reveal the word from your collected letters
 advent-game help
+```
+
+## Uninstall
+
+```sh
+brew uninstall advent-game     # uninstall cli game
+brew untap itskbs/advent-game  # (optional) remove repo references
 ```
 
 ## About this repo
